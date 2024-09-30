@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institución Educativa Luis Braille</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="titulomovil">Institucion educativa Braille</span>
+            <img class="logomovil" src="logo.png" alt="Logomovil">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="colegioDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Colegio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="colegioDropdown">
+                            <li><a class="dropdown-item" href="mensajedirector.html">Mensaje del Director</a></li>
+                            <li><a class="dropdown-item" href="perfilcolegio.html">Perfil del Colegio</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.html">Matrícula</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand mx-auto" href="index.html">
+                    <img src="logo.png" alt="Logo">
+                </a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="comunidadDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Comunidad
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="comunidadDropdown">
+                            <li><a class="dropdown-item" href="https://www.facebook.com/CEBALuisBraille/?locale=es_LA">Facebook</a></li>
+                            <li><a class="dropdown-item" href="#">WhatsApp</a></li>
+                            <li><a class="dropdown-item" href="#">Instagram</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="gradosDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Niveles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="gradosDropdown">
+                            <li><a class="dropdown-item" href="CEBE.html">CEBE</a></li>
+                            <li><a class="dropdown-item" href="CEBA.html">CEBA</a></li>
+                            <li><a class="dropdown-item" href="CETPRO.html">CETPRO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Div de relleno para el espacio de la barra de navegación-->
+    <div class="navbar-spacerseccion"></div>
+    <div class="navbar-spacerseccion"></div>
+    <div class="left-nav-container">
+        <div class="left-nav">
+            <button class="nav-button" onclick="scrollToSection('Admision-seccionCEBE')">
+                <i class="bi bi-book"></i>Sección CEBE
+            </button>
+            <button class="nav-button" onclick="scrollToSection('Admision-seccionCEBA')">
+                <i class="bi bi-bookmark"></i>Sección CEBA
+            </button>
+            <button class="nav-button" onclick="scrollToSection('Admision-seccionCETPRO')">
+                <i class="bi bi-briefcase"></i>Sección CETPRO
+            </button>
+        </div>
+    </div>
+    <section class="requisitos-seccionCEBE py-5" id="Admision-seccionCEBE">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="seccion-titulo">Pasos para la admision(CEBE)</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Paso 1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Necesitas el formulario de inscripción completado, copia del acta de nacimiento del estudiante, certificado médico reciente, evaluación psicopedagógica, copia del DNI del estudiante y de los padres, y dos fotografías tamaño pasaporte.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Paso 2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    El horario escolar es de lunes a viernes, de 8:00 am a 3:00 pm.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed show" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Paso 3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree">
+                                <div class="accordion-body">
+                                    Sí, ofrecemos una variedad de programas extracurriculares, incluyendo actividades deportivas, artísticas y tecnológicas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="requisitos-seccion py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="seccion-titulo">Requisitos de Admisión(CEBE)</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="bi bi-file-earmark-text"></i> Formulario de inscripción completado
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-file-earmark"></i> Copia del acta de nacimiento del estudiante
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-file-medical"></i> Certificado médico reciente
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-person-check"></i> Evaluación psicopedagógica
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-person-badge"></i> Copia del DNI del estudiante y de los padres
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-camera"></i> Dos fotografías tamaño pasaporte
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="navbar-spacerseccion"></div>
+    <section class="requisitos-seccionCEBA py-5" id="Admision-seccionCEBA">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="seccion-titulo">Pasos para la matricula(CEBA)</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Paso 1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Tener edad mínima: 14 años cumplido antes del 31 de marzo
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Paso 2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    Haber realizado estudios de primaria o secundaria.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="requisitos-seccion py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="seccion-titulo">Requisitos(CEBA)</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="bi bi-person-badge"></i> Documento de Identidad Nacional (DNI)
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-file-earmark-text"></i> Certificado de Estudios o constancia de matricula
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="navbar-spacerseccion"></div>
+    <section class="requisitos-seccion py-5" id="Admision-seccionCETPRO">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="seccion-titulo">Pasos para la matricula(CETPRO)</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Paso 1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Tener edad mínima: 14 años cumplidos antes del 31 de marzo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Paso 2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    Estudios de primaria completo
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed show" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Paso 3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree">
+                                <div class="accordion-body">
+                                    Estudios de secundaria completo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="requisitos-seccionCETPRO py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="seccion-titulo">Requisitos(CETPRO)</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="bi bi-file-earmark-text"></i> Certificado de Estudios o constancia de matricula
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-person-badge"></i> Documento de Identidad Nacional (DNI)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 logo">
+                    <img src="logo.png" alt="Logo Institución Educativa Luis Braille">
+                </div>
+                <d iv class="col-md-4 contact-info">
+                    <p><strong>Dirección:</strong> Av. Maestro Peruano 340, Comas 15311</p>
+                    <p><strong>Email:</strong> matricula@luisbraille.edu</p>
+                    <p><strong>Teléfono:</strong> 959 737 550</p>
+                </div>
+                <div class="col-md-4 social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="credits">
+        <p>Diseñado por el equipo de desarrollo de la Institución Educativa Luis Braille</p>
+    </div>
+</body>
+<script>
+ function scrollToSection(id) {
+        const targetElement = document.getElementById(id);
+        if (targetElement) {
+            const offset = 80; // Ajusta este valor según el margen deseado
+            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+                top: elementPosition - offset,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+</html>

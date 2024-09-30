@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institución Educativa Luis Braille</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="titulomovil">Institucion educativa Braille</span>
+            <img class="logomovil" src="logo.png" alt="Logomovil">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="colegioDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Colegio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="colegioDropdown">
+                            <li><a class="dropdown-item" href="mensajedirector.html">Mensaje del Director</a></li>
+                            <li><a class="dropdown-item" href="perfilcolegio.html">Perfil del Colegio</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.html">Matrícula</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand mx-auto" href="index.html">
+                    <img src="logo.png" alt="Logo">
+                </a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="comunidadDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Comunidad
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="comunidadDropdown">
+                            <li><a class="dropdown-item" href="https://www.facebook.com/CEBALuisBraille/?locale=es_LA">Facebook</a></li>
+                            <li><a class="dropdown-item" href="#">WhatsApp</a></li>
+                            <li><a class="dropdown-item" href="#">Instagram</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="gradosDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Niveles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="gradosDropdown">
+                            <li><a class="dropdown-item" href="CEBE.html">CEBE</a></li>
+                            <li><a class="dropdown-item" href="CEBA.html">CEBA</a></li>
+                            <li><a class="dropdown-item" href="CETPRO.html">CETPRO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Div de relleno para el espacio de la barra de navegación-->
+    <div class="navbar-spacer"></div>
+    <!-- Carrusel de imágenes -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagen1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="imagen2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="imagen3.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Sección de información destacada -->
+    <section class="info-section">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-md-start">
+                <div class="text mb-4 mb-md-0">
+                    <h2>Institución Educativa Luis Braille</h2>
+                    <p>La Institución Educativa Luis Braille es una escuela que combina una educación de alta calidad con
+                        un enfoque inclusivo, brindando un ambiente de aprendizaje adaptado a las necesidades de cada
+                        estudiante. Nuestra misión es fomentar el desarrollo integral de nuestros alumnos a través de
+                        metodologías innovadoras y un compromiso constante con la excelencia académica.</p>
+                </div>
+                <div class="imagenesinfo">
+                    <img src="imagen1.jpg" alt="Imagen 1">
+                    <img src="imagen2.jpg" alt="Imagen 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barra de experiencia -->
+    <div class="experience-bar">
+        <div class="experience-main-text">82 años</div>
+        <div class="experience-subtext">Al servicio de la educación de los estudiantes con discapacidad visual</div>
+    </div>
+
+    <!-- Sección de cards -->
+    <section class="secciones-section py-5">
+        <div class="container text-center">
+            <h2>Niveles</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">CEBE</h5>
+                            <img src="logo.png" class="card-imagen" alt="Sección Inicial">
+                            <p class="card-text">El Centro de Educación Básica Especial "Luis Braille" ofrece una educación adaptada para estudiantes con necesidades educativas especiales. Nos enfocamos en crear un entorno inclusivo y personalizado que promueva el desarrollo integral de cada alumno, proporcionando apoyo académico, emocional y social. Con un equipo de profesionales comprometidos y recursos adecuados, buscamos garantizar que cada estudiante alcance su máximo potencial en un ambiente seguro y estimulante.</p>
+                            <div class="mapa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62450.22538899764!2d-77.12973797832029!3d-11.964870699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce32b9a2d7f3%3A0xbeb81f40737856ab!2sIE.%20Luis%20Braille!5e0!3m2!1ses-419!2spe!4v1722119952977!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">CEBA</h5>
+                            <img src="logo.png" class="card-imagen" alt="Sección Primaria">
+                            <p class="card-text">El Centro de Educación Básica Alternativa está diseñado para proporcionar una educación flexible a estudiantes que requieren métodos de enseñanza no convencionales. Nuestro enfoque se basa en adaptarnos a los ritmos y estilos de aprendizaje individuales, brindando apoyo académico y motivacional para que cada alumno pueda avanzar según sus propias necesidades. En un ambiente dinámico y accesible, ofrecemos herramientas y estrategias innovadoras para promover el éxito educativo y personal.</p>
+                            <div class="mapa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62450.22538899764!2d-77.12973797832029!3d-11.964870699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce32b9a2d7f3%3A0xbeb81f40737856ab!2sIE.%20Luis%20Braille!5e0!3m2!1ses-419!2spe!4v1722119952977!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">CETPRO</h5>
+                            <img src="logo.png" class="card-imagen" alt="Sección Inicial">
+                            <p class="card-text">El Centro de Educación Técnica Productiva se dedica a ofrecer formación técnica y profesional para preparar a los estudiantes para el mundo laboral. Nuestro objetivo es proporcionar habilidades prácticas y conocimientos técnicos en diversas áreas, facilitando la inserción efectiva en el mercado de trabajo. Con una formación orientada a las necesidades del sector productivo y la colaboración con empresas locales, buscamos empoderar a nuestros alumnos con las competencias necesarias para tener éxito en sus futuras carreras profesionales.</p>
+                            <div class="mapa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62450.22538899764!2d-77.12973797832029!3d-11.964870699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce32b9a2d7f3%3A0xbeb81f40737856ab!2sIE.%20Luis%20Braille!5e0!3m2!1ses-419!2spe!4v1722119952977!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 logo">
+                    <img src="logo.png" alt="Logo Institución Educativa Luis Braille">
+                </div>
+                <div class="col-md-4 contact-info">
+                    <p><strong>Dirección:</strong> Av. Maestro Peruano 340, Comas 15311</p>
+                    <p><strong>Email:</strong> matricula@luisbraille.edu</p>
+                    <p><strong>Teléfono:</strong> 959 737 550</p>
+                </div>
+                <div class="col-md-4 social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="credits">
+        <p>Diseñado por el LeonardoVa</p>
+    </div>
+
+</body>
+
+</html>
